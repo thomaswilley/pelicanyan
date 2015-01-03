@@ -40,6 +40,7 @@ cloned this repo.
 3. Add your profile photo - Replace the 400x400 PNG located at
    static/img/profile.png with your own
 
+Then to try it out locally, back in your blog's directory:
 ```bash
 $ make clean && make devserver && open http://localhost:8000
 ```

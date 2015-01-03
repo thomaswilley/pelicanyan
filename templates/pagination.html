@@ -1,0 +1,15 @@
+{% if DEFAULT_PAGINATION %}
+<!--// updated -->
+<div class="pagination">
+    {% if articles_page.has_previous() %}
+        <a class="pagination-item newer" href="{{ SITEURL }}/{{ articles_previous_page.url }}">newer</a>
+        {% else %}
+        <span class="pagination-item newer">newer</span>
+    {% endif %}
+    {% if articles_page.has_next() %}
+        <a class="pagination-item older" href="{{ SITEURL }}/{{ articles_next_page.url }}">older</a>
+        {% else %}
+        <span class="pagination-item older">older</span>
+    {% endif %}
+</div>
+{% endif %}

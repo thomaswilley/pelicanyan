@@ -1,0 +1,34 @@
+.profile {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  background: url('../img/profile.png') no-repeat center center;
+  background-size: 99% auto;
+}
+.profile img {
+  opacity: 0;
+  filter: alpha(opactiy=0);
+}
+.content-title h2 {
+  color: #9a9a9a;
+}
+table {
+  max-width: 100% !important;
+}
+tr {
+  max-width: 100% !important;
+}
+td {
+  max-width: 100px !important;
+}
+td img {
+  width: 100% auto;
+}
+.tiny-note {
+  font-size: 8pt;
+}
+.muted {
+  color: #9a9a9a !important;
+}

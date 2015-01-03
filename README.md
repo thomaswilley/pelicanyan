@@ -65,7 +65,7 @@ Open sourced under the [MIT license](LICENSE).
 
 ```bash
 $ mkdir sample_blog && cd sample_blog/
-$ python3 -m virtualenv --no-site-packages --distribute .
+$ python3 -m virtualenv --no-site-packages --distribute venv
 $ source venv/bin/activate
 $ pip3 install pelican markdown typogrify
 $ pelican-quickstart

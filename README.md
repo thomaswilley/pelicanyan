@@ -37,6 +37,12 @@ cloned this repo.
     - (Optional) TYPOGRIFY=True (and pip3 install it of course)
     - (Optional) Set SITEDESCRIPTION
     - (Optional) Set your LINKS
+3. Add your profile photo - Replace the 400x400 PNG located at
+   static/img/profile.png with your own
+
+```bash
+$ make clean && make devserver && open http://localhost:8000
+```
 
 ## Compatability & Caveats
 

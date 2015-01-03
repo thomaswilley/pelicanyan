@@ -97,7 +97,7 @@ $ pelican-quickstart
 $ git clone https://github.com/thomaswilley/pelicanyan.git
 $ vim pelicanconf.py
 ```
-Appeneded the following to pelicanconf.py:
+Append the following to pelicanconf.py:
 
 ```
 THEME = 'pelicanyan'

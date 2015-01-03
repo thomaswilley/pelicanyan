@@ -12,12 +12,13 @@ Repo](https://github.com/poole/lanyon/). Here's a sample:
 
 ## Usage
 
-0. Assumes you've already got your [blog
-   created](http://docs.getpelican.com/en/3.5.0/quickstart.html)
-1. Clone this repo
-2. Download poole.css, lanyon.css, and syntax.css from the [Lanyon
+Assumes you've already got your [blog
+created](http://docs.getpelican.com/en/3.5.0/quickstart.html) and have
+cloned this repo.
+
+1. Download poole.css, lanyon.css, and syntax.css from the [Lanyon
    repo](https://github.com/poole/lanyon/tree/master/public/css) and save into the static/css directory
-3. Set basic theme-specific settings in your blog's pelicanconf.py:
+2. Set basic theme-specific settings in your blog's pelicanconf.py:
     - THEME='path-to-cloned-repo'
     - GA_ACCOUNT (your GA account id, e.g., 'UA-12344321-1') assuming
     you'd like GA enabled (see base.html)

@@ -1,13 +1,11 @@
 # Pelicanyan
 
-Pelicanyan brings Jekyll's [Lanyon
-Theme](https://github.com/poole/lanyon/) to
+Pelicanyan brings Jekyll's [Lanyon Theme](https://github.com/poole/lanyon/) to
 [Pelican](http://github.com/getpelican) and adds some Pelican niceties
 including a sitemap.xml, robots.txt, humans.txt, etc.
 
 More information about the lanyon theme including screenshots and such
-is best found over at the [Lanyon
-Repo](https://github.com/poole/lanyon/). Here's a sample:
+is best found over at the [Lanyon Repo](https://github.com/poole/lanyon/). Here's a sample:
 
 ![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
 
@@ -62,3 +60,68 @@ etc. - remain functional here, these haven't been tested either.
 ## License
 
 Open sourced under the [MIT license](LICENSE).
+
+### Example Quickstart
+
+```bash
+$ mkdir sample_blog && cd sample_blog/
+$ python3 -m virtualenv --no-site-packages --distribute .
+$ source venv/bin/activate
+$ pip3 install pelican markdown typogrify
+$ pelican-quickstart
+```
+  > Where do you want to create your new web site? [.] 
+  > What will be the title of this web site? sample blog
+  > Who will be the author of this web site? me
+  > What will be the default language of this web site? [en] 
+  > Do you want to specify a URL prefix? e.g., http://example.com
+  > (Y/n) n
+  > Do you want to enable article pagination? (Y/n) n
+  > Do you want to generate a Fabfile/Makefile to automate
+  > generation and publishing? (Y/n) Y
+  > Do you want an auto-reload & simpleHTTP script to assist with theme
+  > and site development? (Y/n) Y
+  > Do you want to upload your website using FTP? (y/N) n
+  > Do you want to upload your website using SSH? (y/N) n
+  > Do you want to upload your website using Dropbox? (y/N) n
+  > Do you want to upload your website using S3? (y/N) n
+  > Do you want to upload your website using Rackspace Cloud Files?
+  > (y/N) n
+  > Do you want to upload your website using GitHub Pages? (y/N) n
+  Done. Your new project is available at /xyz/sample_blog
+
+```bash
+$ git clone https://github.com/thomaswilley/pelicanyan.git
+$ vim pelicanconf.py
+```
+Appeneded the following to pelicanconf.py:
+  > THEME = 'pelicanyan'
+  > GA_ACCOUNT = 'UA-12344321-1'
+  > TWITTER_ACCOUNT = 'getpelican'
+  > DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives',
+  > 'sitemap', 'robots', 'humans')
+  > ROBOTS_SAVE_AS = 'robots.txt'
+  > HUMANS_SAVE_AS = 'humans.txt'
+  > SITEMAP_SAVE_AS = 'sitemap.xml'
+  > DEFAULT_LANG = 'en'
+  > DATE_FORMATS = { 'en': '%B %d, %Y', }
+  > STATIC_PATHS = ['images', 'favicon.ico']
+  > SITEDESCRIPTION = 'sample blog'
+  > TYPOGRIFY=True
+
+```bash
+$ cd pelicanyan/static/css/
+$ wget
+https://raw.githubusercontent.com/poole/lanyon/master/public/css/lanyon.css
+$ wget
+https://raw.githubusercontent.com/poole/lanyon/master/public/css/poole.css
+$ wget
+https://raw.githubusercontent.com/poole/lanyon/master/public/css/syntax.css
+$ cd ../../../
+```
+(back in /xyz/sample_blog)
+
+```bash
+$ make clean && make html && make serve
+$ open http://localhost:8000
+```

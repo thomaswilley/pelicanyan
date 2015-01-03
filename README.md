@@ -70,7 +70,9 @@ $ source venv/bin/activate
 $ pip3 install pelican markdown typogrify
 $ pelican-quickstart
 ```
-  > Where do you want to create your new web site? [.]
+
+```
+  Where do you want to create your new web site? [.]
   What will be the title of this web site? sample blog
   Who will be the author of this web site? me
   What will be the default language of this web site? [en]
@@ -89,25 +91,28 @@ $ pelican-quickstart
   (y/N) n
   Do you want to upload your website using GitHub Pages? (y/N) n
   Done. Your new project is available at /xyz/sample_blog
+```
 
 ```bash
 $ git clone https://github.com/thomaswilley/pelicanyan.git
 $ vim pelicanconf.py
 ```
 Appeneded the following to pelicanconf.py:
-  > THEME = 'pelicanyan'
-  > GA_ACCOUNT = 'UA-12344321-1'
-  > TWITTER_ACCOUNT = 'getpelican'
-  > DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives',
-  > 'sitemap', 'robots', 'humans')
-  > ROBOTS_SAVE_AS = 'robots.txt'
-  > HUMANS_SAVE_AS = 'humans.txt'
-  > SITEMAP_SAVE_AS = 'sitemap.xml'
-  > DEFAULT_LANG = 'en'
-  > DATE_FORMATS = { 'en': '%B %d, %Y', }
-  > STATIC_PATHS = ['images', 'favicon.ico']
-  > SITEDESCRIPTION = 'sample blog'
-  > TYPOGRIFY=True
+
+```
+THEME = 'pelicanyan'
+GA_ACCOUNT = 'UA-12344321-1'
+TWITTER_ACCOUNT = 'getpelican'
+DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'sitemap', 'robots', 'humans')
+ROBOTS_SAVE_AS = 'robots.txt'
+HUMANS_SAVE_AS = 'humans.txt'
+SITEMAP_SAVE_AS = 'sitemap.xml'
+DEFAULT_LANG = 'en'
+DATE_FORMATS = { 'en': '%B %d, %Y', }
+STATIC_PATHS = ['images', 'favicon.ico']
+SITEDESCRIPTION = 'sample blog'
+TYPOGRIFY=True
+```
 
 ```bash
 $ cd pelicanyan/static/css/

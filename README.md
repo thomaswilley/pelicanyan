@@ -40,11 +40,10 @@ cloned this repo.
 ## Compatability & Caveats
 
 Pelicanyan's probably best considered alpha at this time and hasn't
-undergone much testing. If you find bugs by all means help fix them and
-build out a browser compatability matrix. While most likely things like
-reversing the layout, updating color scheme, and other options
-associated with Lanyon remain possible here, these haven't been tested
-either.
+undergone much testing - would welcome help finding & fixing bugs and
+also with the browser compatability matrix! While it's likely that
+Lanyon's options - e.g., reversing the layout, updating color scheme,
+etc. - remain functional here, these haven't been tested either.
 
 ## Author
 

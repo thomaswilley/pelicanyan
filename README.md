@@ -2,7 +2,8 @@
 
 Pelicanyan brings Jekyll's [Lanyon
 Theme](https://github.com/poole/lanyon/) to
-[Pelican](http://github.com/getpelican).
+[Pelican](http://github.com/getpelican) and adds some Pelican niceties
+including a sitemap.xml, robots.txt, humans.txt, etc.
 
 More information about the lanyon theme including screenshots and such
 is best found over at the [Lanyon

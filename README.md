@@ -116,12 +116,9 @@ TYPOGRIFY=True
 
 ```bash
 $ cd pelicanyan/static/css/
-$ wget
-https://raw.githubusercontent.com/poole/lanyon/master/public/css/lanyon.css
-$ wget
-https://raw.githubusercontent.com/poole/lanyon/master/public/css/poole.css
-$ wget
-https://raw.githubusercontent.com/poole/lanyon/master/public/css/syntax.css
+$ wget https://raw.githubusercontent.com/poole/lanyon/master/public/css/lanyon.css
+$ wget https://raw.githubusercontent.com/poole/lanyon/master/public/css/poole.css
+$ wget https://raw.githubusercontent.com/poole/lanyon/master/public/css/syntax.css
 $ cd ../../../
 ```
 (back in /xyz/sample_blog)

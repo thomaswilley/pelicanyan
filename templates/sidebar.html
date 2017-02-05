@@ -10,7 +10,7 @@ styles, `#sidebar-checkbox` for behavior. -->
   </div>
 
   <nav class="sidebar-nav">
-  <a class="sidebar-nav-item" href="/">All</a>
+  <a class="sidebar-nav-item" href="{{ SITEURL }}">All</a>
 
   {% for category, articles in categories %}
       <a class="sidebar-nav-item" href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a>
